@@ -65,7 +65,7 @@ export default function Home() {
         <button onClick={getKelurahan}>Kelurahan</button>
       </div>
       {provinsi.map((pro) => (
-        <h1>{pro.name}</h1>
+        <h1 key={pro.name}>{pro.name}</h1>
       ))}
     </>
   ) : null;
